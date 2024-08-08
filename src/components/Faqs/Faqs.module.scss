@@ -1,0 +1,35 @@
+.work_sec {
+    background-color: #fff3f7;
+    padding: 60px 0px;
+
+    .heading {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #121212;
+        font-family: var(--playfair_display);
+        text-align: center;
+        position: relative;
+    }
+
+    .heading::before {
+        content: '';
+        position: absolute;
+        bottom: -4.5rem;
+        left: 33rem;
+        right: 0px;
+        background-image: url('/heading_img.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 230px;
+        height: 50px;
+    }
+
+}
+
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .heading::before {
+        left: 1rem !important;
+    }
+}

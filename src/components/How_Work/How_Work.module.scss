@@ -1,0 +1,182 @@
+.work_sec {
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // background-image: linear-gradient(180deg, #fff9fb 10%, #ffd7e3);
+    // width: 100%;
+    padding: 60px 0px;
+
+    .heading {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #121212;
+        font-family: var(--playfair_display);
+        text-align: center;
+        position: relative;
+    }
+
+    .heading::before {
+        content: '';
+        position: absolute;
+        bottom: -6rem;
+        left: 33rem;
+        right: 0px;
+        background-image: url('/heading_img.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 230px;
+        height: 50px;
+    }
+
+    .para {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #808080;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: baseline;
+        margin-bottom: 40px;
+
+        .step {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #ff1593;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            line-height: 37px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        }
+
+        .main_content {
+            display: flex;
+            flex-direction: column;
+
+            .head {
+                font-size: 26px;
+                font-weight: 600;
+                font-family: var(--playfair_display);
+                color: #121212;
+                margin-bottom: 15px;
+            }
+
+            .para1 {
+                font-size: 16px;
+                font-weight: 400;
+                font-family: var(--lato);
+                color: #808080;
+                margin-bottom: 0px;
+                width: 62%;
+            }
+        }
+
+    }
+
+    .background_img {
+        position: relative;
+        background-image: url('/works.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 450px !important;
+        height: 550px !important;
+        overflow: hidden;
+
+        .slide {
+            width: 450px !important;
+            overflow: hidden;
+
+            .number {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #ff76c0;
+                color: #fff;
+                position: absolute;
+                top: 7.3rem;
+                font-size: 26px;
+                right: 13rem;
+                text-align: center;
+                line-height: 36px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            }
+
+            .image {
+                width: 270px;
+                height: 270px;
+                left: -0.400rem;
+                top: 9rem;
+                position: relative;
+                margin: 0px auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+
+    .background_img::before {
+        content: '';
+        position: absolute;
+        top: 6.3rem;
+        right: 3.58rem;
+        width: 350px !important;
+        height: 350px !important;
+        background-color: #fcf7c8;
+        border: 3px solid #c1a26a;
+        border-radius: 50%;
+        overflow: hidden !important;
+    }
+
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .work_sec {
+        .heading::before {
+            left: 1rem !important;
+        }
+
+        .background_img {
+            width: 300px !important;
+            height: 350px !important;
+        }
+
+        .background_img::before {
+            top: 4.3rem;
+            right: 3.05rem;
+            width: 225px !important;
+            height: 225px !important;
+        }
+
+        .slide {
+            .image {
+                width: 200px !important;
+                height: 200px !important;
+                left: -5rem !important;
+                top: 6rem !important;
+            }
+
+            .number{
+                width: 30px !important;
+                height: 30px !important;
+                top: 5.3rem !important;
+                font-size: 20px !important;
+                right: 18rem !important ;
+                line-height: 30px !important;
+            }
+        }
+    }
+}

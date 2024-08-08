@@ -1,0 +1,117 @@
+.explore {
+    // background-repeat: no-repeat;
+    // background-size: 100% 100%;
+    // background-image: linear-gradient(180deg, #fff9fb 10%, #ffd7e3);
+    // width: 100%;
+    background-color: #fff3f7;
+    padding: 60px 0px;
+
+    .heading {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #121212;
+        font-family: var(--playfair_display);
+        text-align: center;
+        position: relative;
+    }
+
+    .heading::before {
+        content: '';
+        position: absolute;
+        bottom: -6.75rem;
+        left: 33rem;
+        right: 0px;
+        background-image: url('/heading_img.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 230px;
+        height: 50px;
+    }
+
+    .para {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #808080;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+
+    .content {
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 2rem;
+        position: relative;
+
+        .image {
+            width: 100px;
+            height: 100px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0px 2.520547866821289px 10.082191467285156px 0px rgba(0, 0, 0, .16);
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: var(--lato);
+            color: #121212;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
+            width: 145px;
+
+            svg {
+                font-size: 22px;
+                color: #c9ae7e;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+    }
+
+    .btn1 {
+        border: 1px solid #fd3ca4;
+        background-color: transparent;
+        color: #fd3ca4;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        font-family: var(--lato);
+        margin-top: 60px;
+        padding: 8px 30px;
+    }
+
+    .content:hover {
+        h4 {
+            svg {
+                transform: translateX(60%);
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .heading::before {
+        left: 1rem !important;
+    }
+}

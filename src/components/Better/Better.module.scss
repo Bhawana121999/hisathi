@@ -1,0 +1,116 @@
+.better_sec {
+    padding: 60px 0px;
+    position: relative;
+
+    .heading {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #121212;
+        font-family: var(--playfair_display);
+        text-align: center;
+        position: relative;
+    }
+
+    .heading::before {
+        content: '';
+        position: absolute;
+        bottom: -6.75rem;
+        left: 33rem;
+        right: 0px;
+        background-image: url('/heading_img.webp');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 230px;
+        height: 50px;
+    }
+
+    .para {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: var(--lato);
+        color: #808080;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+
+    .box {
+        margin-top: 6.75rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        background-image: linear-gradient(180deg, #fffffe 0%, #f6ecda);
+        border-radius: 0.75rem;
+        box-shadow: rgb(50 50 93 / 14%) 0px 50px 100px -20px, rgb(0 0 0 / 0%) 0px 30px 60px -30px, rgb(10 37 64 / 24%) 0px -2px 6px 0px inset;
+        // box-shadow: 0px 2.520547866821289px 10.082191467285156px 0px rgba(0, 0, 0, .16);
+
+        .image {
+            width: 100%;
+            height: 150px;
+            position: relative;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        h4 {
+            font-size: 21px;
+            font-weight: 700;
+            font-family: var(--lato);
+            color: #121212;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: var(--lato);
+            color: #808080;
+            margin-bottom: 1rem;
+        }
+
+    }
+}
+
+.better_sec:before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 4rem;
+    right: 0rem;
+    background-image: url('/location.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 275px;
+    height: 500px;
+    opacity: 0.5;
+}
+
+.better_sec:after {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    bottom: 3rem;
+    left: 0rem;
+    background-image: url('/location.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 350px;
+    transform: rotate(180deg);
+    opacity: 0.5;
+}
+
+
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .heading::before {
+        left: 1rem !important;
+    }
+}
