@@ -28,8 +28,24 @@
 }
 
 
-@media only screen and (min-width:300px) and (max-width:500px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .work_sec {
+        padding: 35px 0px !important;
+    }
+
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
     .heading::before {
-        left: 1rem !important;
+        left: 4.75rem !important;
+        bottom: -2.75rem !important;
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    .padding{
+        padding-top: 0rem !important;
     }
 }

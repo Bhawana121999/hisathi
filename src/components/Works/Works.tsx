@@ -14,6 +14,22 @@ import Image from 'next/image';
 
 export default function Works() {
 
+    const responsive = {
+        0: {
+            slidesPerView: 1,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    }
+
+
     return (
 
         <div className={style.work_sec}>
@@ -33,13 +49,14 @@ export default function Works() {
                 rewind={false}
                 slidesPerView={4}
                 spaceBetween={30}
-                autoplay={{
-                    delay: 0,
-                    disableOnInteraction: false,
-                }}
+                // autoplay={{
+                //     delay: 0,
+                //     disableOnInteraction: false,
+                // }}
+                breakpoints={responsive}
                 speed={12000}
                 freeMode={true}
-                modules={[Autoplay]}
+                // modules={[Autoplay]}
                 className={`mySwiper ${style.slider}`}
             >
 

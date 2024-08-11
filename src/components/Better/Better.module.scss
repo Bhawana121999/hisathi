@@ -109,8 +109,56 @@
 
 
 
-@media only screen and (min-width:300px) and (max-width:500px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
+
+    .better_sec {
+        padding: 35px 0px;
+
+        .para {
+            margin-bottom: 3rem !important;
+        }
+    }
+
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
     .heading::before {
-        left: 1rem !important;
+        left: 4.75rem !important;
+        bottom: -5.75rem !important;
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    .box {
+        margin-top: 0.75rem !important;
+        padding: 0.75rem !important;
+
+        .image{
+            height: 120px !important;
+            margin-bottom: 10px !important;
+        }
+
+        h4{
+            margin-bottom: 6px !important;
+            font-size: 18px !important;
+        }
+
+        .para{
+            font-size: 15px !important;
+        }
+    }
+
+    .better_sec:after {
+        z-index: -1 !important;
+        width: 170px !important;
+        height: 300px !important;
+    }
+
+    .better_sec:before {
+        z-index: -1 !important;
+        width: 170px !important;
+        height: 300px !important;
     }
 }

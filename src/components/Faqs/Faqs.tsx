@@ -17,7 +17,7 @@ export default function Faqs() {
                         <h2 className={style.heading}>Frequently asked questions</h2>
                     </div>
 
-                    <div className="col-lg-7 col-md-7 col-sm-7 mt-5 pt-5">
+                    <div className={`col-lg-7 col-md-7 col-sm-7 mt-5 pt-5 ${style.padding}`}>
                         <Accordion>
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>How much does your wedding planning service cost?</Accordion.Header>
