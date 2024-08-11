@@ -130,8 +130,63 @@
 }
 
 
-@media only screen and (min-width:300px) and (max-width:500px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
     .heading::before {
-        left: 1rem !important;
+        left: 4.75rem !important;
+        bottom: -4.75rem !important;
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    .para {
+        margin-bottom: 45px !important;
+    }
+
+    .location {
+        padding: 35px 0px;
+
+        .list {
+            gap: 65px;
+            margin-top: 20px;
+
+            .item {
+                width: 3%;
+            }
+
+            .circle {
+                width: 65px;
+                height: 65px;
+
+                .image {
+                    width: 42px;
+                    height: 42px;
+                }
+            }
+        }
+
+        h6 {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+
+        .btn1 {
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+
+    .location::after {
+        width: 150px;
+        height: 280px;
+    }
+
+    .location::before {
+        width: 150px;
+        height: 280px;
     }
 }

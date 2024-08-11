@@ -27,7 +27,7 @@ export default function How_Work() {
 
 
 
-                    <div className="row mt-4 pt-5 justify-content-center align-items-center">
+                    <div className={`row mt-4 pt-5 justify-content-center align-items-center ${style.rows}`}>
                         <div className="col-lg-7 col-md-7 col-sm-7">
                             <div className={style.box}>
                                 <h6 className={style.step}>1</h6>

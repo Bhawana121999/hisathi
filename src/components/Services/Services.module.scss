@@ -128,8 +128,29 @@
 
 
 @media only screen and (min-width:300px) and (max-width:500px) {
+    .service {
+        padding: 35px 0px;
+    }
+
+    .service_img {
+        height: 300px !important;
+    }
+
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+        text-align: center !important;
+    }
+
+    .para {
+        text-align: center !important;
+    }
+
     .heading::before {
-        left: 1rem !important;
+        left: 4.75rem !important;
+        bottom: -5.75rem !important;
+        width: 150px !important;
+        height: 35px !important;
     }
 
     .padding_left {
@@ -137,8 +158,32 @@
     }
 
     .padding_left::before {
-        top: 18rem !important;
-        right: 1rem !important;
-        width: 275px !important;
+        top: 4rem !important;
+        right: 0rem !important;
+        width: 250px !important;
+    }
+
+    .box {
+        margin-top: 3rem !important;
+        gap: 20px !important;
+        align-items: center !important;
+
+        .content {
+            gap: 15px;
+
+            .image {
+                width: 30px !important;
+                height: 30px !important;
+            }
+
+            .main_service {
+                font-size: 18px !important;
+            }
+
+        }
+    }
+
+    .btn2 {
+        font-size: 16px !important;
     }
 }

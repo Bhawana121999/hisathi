@@ -111,7 +111,55 @@
 
 
 @media only screen and (min-width:300px) and (max-width:500px) {
+    .explore {
+        padding: 30px 0px !important;
+    }
+
+    .padding {
+        margin-bottom: 0rem !important;
+    }
+
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
     .heading::before {
-        left: 1rem !important;
+        left: 4.75rem !important;
+        bottom: -6.05rem !important;
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    .content {
+        gap: 10px !important;
+        margin-top: 1rem !important;
+        flex-direction: column !important;
+
+        h4 {
+            font-size: 18px !important;
+            justify-content: center !important;
+            width: unset !important;
+
+            svg {
+                font-size: 14px !important;
+            }
+        }
+    }
+
+    .btn1 {
+        margin-top: 35px !important;
+        font-size: 16px !important;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 80px !important;
+        height: 80px !important;
     }
 }

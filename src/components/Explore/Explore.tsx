@@ -19,13 +19,15 @@ export default function Explore() {
         <div className={style.explore}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-12 col-md-12 col-sm-12 mb-5 pb-5">
+                    <div className={`col-lg-12 col-md-12 col-sm-12 mb-5 pb-5 ${style.padding}`}>
                         <h2 className={style.heading}>Explore wedding ideas</h2>
                         <p className={style.para}>10,000+ unique wedding ideas for your
                             special day. Create your ideabook!</p>
                     </div>
+                </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                <div className={`row ${style.rows}`}>
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore1} alt='' fill priority />
@@ -34,7 +36,7 @@ export default function Explore() {
                         </Link>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore5} alt='' fill priority />
@@ -43,7 +45,7 @@ export default function Explore() {
                         </Link>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore3} alt='' fill priority />
@@ -52,7 +54,7 @@ export default function Explore() {
                         </Link>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore4} alt='' fill priority />
@@ -61,7 +63,7 @@ export default function Explore() {
                         </Link>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore2} alt='' fill priority />
@@ -70,7 +72,7 @@ export default function Explore() {
                         </Link>
                     </div>
 
-                    <div className="col-lg-4 col-md-4 col-sm-4">
+                    <div className="col-lg-4 col-md-4 col-sm-4 col-6">
                         <Link href='#' className={style.content}>
                             <div className={style.image}>
                                 <Image src={explore6} alt='' fill priority />

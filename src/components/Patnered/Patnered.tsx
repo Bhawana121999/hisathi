@@ -14,12 +14,30 @@ import Image from 'next/image';
 
 export default function Patnered() {
 
+
+    const responsive = {
+        0: {
+            slidesPerView: 2.5,
+        },
+        640: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 4,
+        },
+        1024: {
+            slidesPerView: 5,
+        },
+    }
+
+
+
     return (
 
         <div className={style.work_sec}>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-12 col-md-12 col-sm-12 mb-5 pb-5">
+                    <div className={`col-lg-12 col-md-12 col-sm-12 mb-5 pb-5 ${style.padding}`}>
                         <h2 className={style.heading}>Partnered with the best in the industry</h2>
                     </div>
 
@@ -29,6 +47,7 @@ export default function Patnered() {
                             rewind={true}
                             slidesPerView={6}
                             spaceBetween={30}
+                            breakpoints={responsive}
                             autoplay={{
                                 delay: 3000,
                                 disableOnInteraction: false,

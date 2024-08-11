@@ -50,9 +50,28 @@
 
 
 
-@media only screen and (min-width:300px) and (max-width:500px) {
-    .heading::before {
-        left: 1rem !important;
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .work_sec {
+        padding: 30px 0px;
+        height: 280px;
     }
 
+    .heading {
+        font-size: 32px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .heading::before {
+        left: 4.75rem !important;
+        bottom: -2.75rem !important;
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    .padding {
+        padding-bottom: 3rem !important;
+        margin-bottom: 1rem !important;
+    }
 }

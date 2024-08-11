@@ -143,40 +143,79 @@
 
 
 
-@media only screen and (min-width:300px) and (max-width:500px) {
+@media only screen and (min-width:300px) and (max-width:600px) {
     .work_sec {
+        padding: 15px 0px;
+
+        .heading {
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+
         .heading::before {
-            left: 1rem !important;
+            left: 4.75rem !important;
+            bottom: -4.75rem !important;
+            width: 150px;
+            height: 35px;
         }
 
         .background_img {
-            width: 300px !important;
-            height: 350px !important;
+            width: 370px !important;
+            height: 370px !important;
         }
 
         .background_img::before {
-            top: 4.3rem;
-            right: 3.05rem;
-            width: 225px !important;
-            height: 225px !important;
+            top: 3.75rem;
+            right: 6.1rem;
+            width: 250px !important;
+            height: 250px !important;
+        }
+
+        .rows {
+            flex-direction: column-reverse;
         }
 
         .slide {
             .image {
                 width: 200px !important;
                 height: 200px !important;
-                left: -5rem !important;
+                left: -4.5rem !important;
                 top: 6rem !important;
             }
 
-            .number{
+            .number {
                 width: 30px !important;
                 height: 30px !important;
-                top: 5.3rem !important;
+                top: 4.75rem !important;
                 font-size: 20px !important;
-                right: 18rem !important ;
-                line-height: 30px !important;
+                right: 17.75rem !important;
+                line-height: 27px !important;
             }
+        }
+
+        .box {
+            gap: 25px;
+            margin-bottom: 20px;
+
+            .main_content {
+
+                .head {
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                }
+
+                .para1 {
+                    width: unset !important;
+                    font-size: 15px !important;
+                }
+            }
+        }
+
+        .step {
+            font-size: 20px !important;
+            line-height: 32px !important;
+            width: 75px !important;
+            height: 33px !important;
         }
     }
 }
