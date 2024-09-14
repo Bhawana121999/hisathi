@@ -132,7 +132,7 @@
 
 @media only screen and (min-width:300px) and (max-width:600px) {
     .heading {
-        font-size: 32px !important;
+        font-size: 28px !important;
         margin-bottom: 5px !important;
     }
 
@@ -181,12 +181,12 @@
     }
 
     .location::after {
-        width: 150px;
-        height: 280px;
+        width: 100px;
+        height: 200px;
     }
 
     .location::before {
-        width: 150px;
-        height: 280px;
+        width: 100px;
+        height: 200px;
     }
 }

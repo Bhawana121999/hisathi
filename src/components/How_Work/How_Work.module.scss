@@ -86,12 +86,13 @@
         background-image: url('/works.webp');
         background-repeat: no-repeat;
         background-size: contain;
-        width: 450px !important;
-        height: 550px !important;
+        // width: 450px !important;
+        // height: 550px !important;
+        aspect-ratio: 10 / 10;
         overflow: hidden;
 
         .slide {
-            width: 450px !important;
+            // width: 450px !important;
             overflow: hidden;
 
             .number {
@@ -103,16 +104,16 @@
                 position: absolute;
                 top: 7.3rem;
                 font-size: 26px;
-                right: 13rem;
+                right: 18rem;
                 text-align: center;
-                line-height: 36px;
+                // line-height: 36px;
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
             }
 
             .image {
-                width: 270px;
-                height: 270px;
-                left: -0.400rem;
+                width: 250px;
+                height: 250px;
+                left: -3.4rem;
                 top: 9rem;
                 position: relative;
                 margin: 0px auto;
@@ -126,18 +127,18 @@
         }
     }
 
-    .background_img::before {
-        content: '';
-        position: absolute;
-        top: 6.3rem;
-        right: 3.58rem;
-        width: 350px !important;
-        height: 350px !important;
-        background-color: #fcf7c8;
-        border: 3px solid #c1a26a;
-        border-radius: 50%;
-        overflow: hidden !important;
-    }
+    // .background_img::before {
+    //     content: '';
+    //     position: absolute;
+    //     top: 6.3rem;
+    //     right: 3.58rem;
+    //     width: 350px !important;
+    //     height: 350px !important;
+    //     background-color: #fcf7c8;
+    //     border: 3px solid #c1a26a;
+    //     border-radius: 50%;
+    //     overflow: hidden !important;
+    // }
 
 }
 
@@ -148,7 +149,7 @@
         padding: 15px 0px;
 
         .heading {
-            font-size: 32px;
+            font-size: 28px;
             margin-bottom: 5px;
         }
 
@@ -160,15 +161,15 @@
         }
 
         .background_img {
-            width: 370px !important;
-            height: 370px !important;
+            width: 340px !important;
+            height: 340px !important;
         }
 
         .background_img::before {
             top: 3.75rem;
-            right: 6.1rem;
-            width: 250px !important;
-            height: 250px !important;
+            right: 5.7rem;
+            width: 230px !important;
+            height: 230px !important;
         }
 
         .rows {
@@ -177,10 +178,10 @@
 
         .slide {
             .image {
-                width: 200px !important;
-                height: 200px !important;
-                left: -4.5rem !important;
-                top: 6rem !important;
+                width: 150px !important;
+                height: 150px !important;
+                left: -2.1rem !important;
+                top: 7rem !important;
             }
 
             .number {
@@ -188,19 +189,20 @@
                 height: 30px !important;
                 top: 4.75rem !important;
                 font-size: 20px !important;
-                right: 17.75rem !important;
-                line-height: 27px !important;
+                right: 11.8rem !important;
+                // line-height: 27px !important;
             }
         }
 
         .box {
-            gap: 25px;
+            flex-direction: column !important;
+            gap: 0px;
             margin-bottom: 20px;
 
             .main_content {
 
                 .head {
-                    font-size: 22px;
+                    font-size: 20px;
                     margin-bottom: 10px;
                 }
 
@@ -212,10 +214,15 @@
         }
 
         .step {
-            font-size: 20px !important;
-            line-height: 32px !important;
-            width: 75px !important;
-            height: 33px !important;
+            // font-size: 20px !important;
+            // line-height: 32px !important;
+            // width: 75px !important;
+            // height: 33px !important;
+
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 18px !important;
+            line-height: 28px !important;
         }
     }
 }

@@ -105,7 +105,7 @@
     }
 
     .heading {
-        font-size: 32px !important;
+        font-size: 28px !important;
         margin-bottom: 5px !important;
     }
 
@@ -121,5 +121,13 @@
         margin-bottom: 20px !important;
     }
 
+    .work_sec:after {
+        width: 100px !important;
+        height: 200px !important;
+    }
 
+    .work_sec:before {
+        width: 100px !important;
+        height: 200px !important;
+    }
 }
