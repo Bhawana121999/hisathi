@@ -11,6 +11,7 @@ import Form from 'react-bootstrap/Form';
 import { AiOutlineUser } from "react-icons/ai";
 import { MdOutlinePhone } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
+import { IoLocationOutline } from 'react-icons/io5';
 
 
 export default function page() {
@@ -57,11 +58,8 @@ export default function page() {
                                     <div className={style.contact_box}>
                                         <MdOutlineLocalPhone />
                                         <h6 className={style.name}>Make a Call</h6>
-                                        <p className={style.para}>
-                                            Make a call for your general enquiries
-                                        </p>
-                                        <Link href="#" className={style.link}>
-                                            +91 96670 65066
+                                        <Link href="tel:+918267851405" className={style.link}>
+                                            +91 8267851405
                                         </Link>
                                     </div>
                                 </div>
@@ -69,23 +67,17 @@ export default function page() {
                                     <div className={style.contact_box}>
                                         <HiOutlineMailOpen />
                                         <h6 className={style.name}>Send a Mail</h6>
-                                        <p className={style.para}>
-                                            Send your mail for general enquiries
-                                        </p>
-                                        <Link href="#" className={style.link}>
-                                            hello@wabisabistays.com
+                                        <Link href="mailto:contact@hisathi.com" className={style.link}>
+                                            contact@hisathi.com
                                         </Link>
                                     </div>
                                 </div>
                                 <div className={`${style.border} col-lg-4 col-md-4 col-sm-4`}>
                                     <div className={style.contact_box}>
-                                        <MdSupportAgent />
-                                        <h6 className={style.name}>Toll Free</h6>
-                                        <p className={style.para}>
-                                            Toll free number for staying guest
-                                        </p>
-                                        <Link href="#" className={style.link}>
-                                            1800-6002-1234
+                                        <IoLocationOutline />
+                                        <h6 className={style.name}>Location</h6>
+                                        <Link href="https://www.google.com/maps/search/2+Tehri+Nagar,+Doon+University+Road,+Kedarpuram,+Dehradun,+Uttarakhand-248001/@30.2759263,78.0259369,14z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%3D%3D" className={style.link}>
+                                            2 Tehri Nagar, Doon University Road, Kedarpuram, Dehradun, Uttarakhand-248001
                                         </Link>
                                     </div>
                                 </div>

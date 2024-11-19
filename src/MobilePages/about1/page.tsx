@@ -1,5 +1,8 @@
+
 import React from 'react'
 import style from "./about.module.scss"
+
+
 export default function page() {
 
 

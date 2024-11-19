@@ -3,24 +3,24 @@ body {
   padding: 0px;
 }
 
+/* header start */
 
-.header {
-  margin: 15px 0;
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  gap: 3.5rem;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar_top {
-  border: none;
-  padding: 0.7rem 4rem !important;
-}
-
-@media only screen and (min-width:300px) and (max-width:600px) {
-  .navbar_top {
-    padding: 0px !important;
-  }
-
-  .topleftlogo img {
-    width: 130px !important;
-  }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2222;
+  background-color: hsla(0, 0%, 100%, .3);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .pt60 {
@@ -60,7 +60,8 @@ body {
 
 .nav-item.dropdown .dropdown-menu {
   position: absolute;
-  top: 61px;
+  top: 3rem;
+  right: 0rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, .1);
   width: 200px;
   display: unset !important;
@@ -84,7 +85,7 @@ body {
 
 .nav-item.dropdown .dropdown-menu li a:hover {
   padding-left: 25px !important;
-  color: #b18d48 !important;
+  color: #fd3ca4 !important;
   font-weight: 700;
   transition: all .5s;
 
@@ -94,6 +95,8 @@ body {
   background-color: transparent !important;
   width: 100% !important;
 }
+
+/* header ends */
 
 .custompading {
   padding-left: 15rem;
@@ -225,4 +228,34 @@ body {
 .banner_content .download_btn .btn_image {
   width: 11.58em;
   height: 60px;
+}
+
+
+
+
+@media only screen and (min-width:300px) and (max-width:600px) {
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-item.dropdown {
+    text-align: left !important;
+    width: 100%;
+  }
+
+  .offcanvas-title img {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  .nav-item.dropdown .dropdown-menu{
+    left: 0px;
+    width: 100%;
+  }
+
+  .sticky{
+    display: none;
+  }
 }
